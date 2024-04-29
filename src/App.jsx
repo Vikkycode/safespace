@@ -17,9 +17,9 @@ function App() {
     <Animation>
     <Routes />
     </Animation>
+   <Footer />
     </Suspense>
    </Router>
-   <Footer />
    <BackToTop />
     </>
   );
