@@ -34,7 +34,10 @@ const Navbar = () => {
         onClick={() => setIsClick(true)}
         className='sm:hidden block'/>
             {isClick && (
-        <div className='bg-white  w-full h-full fixed z-[10] top-0 right-0 flex justify-center items-center'>
+        <div 
+        data-aos="fade right" 
+        data-aos-duration="1000"
+        className='bg-white  w-full h-full fixed z-[10] top-0 right-0 flex justify-center items-center'>
         <SidebarCloseIcon size={32} className='fixed top-10 right-5' onClick={() => setIsClick(false)} />
         <ul className='sm:flex  items-center space-x-8'>
             {Navitems?.map((item, index)=>(

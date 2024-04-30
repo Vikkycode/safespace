@@ -2,11 +2,17 @@ import React from 'react'
 
 const AccordionItem = ({title, detail}) => {
   return (
-    <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+    <details 
+    data-aos="fade up"
+    data-aos-duration="3000"
+    class="group [&_summary::-webkit-details-marker]:hidden" open>
       <summary
+       data-aos="fade up"
+       data-aos-duration="3000"
         class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg  text-gray-900"
       >
-        <h2 class="font-medium text-sm sm:text-xl border-b-2 border-black w-full pb-5 capitalize">{title}</h2>
+        <h2 
+        class="font-medium text-sm sm:text-xl border-b-2 border-black w-full pb-5 capitalize">{title}</h2>
         <svg
           class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
           xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +24,10 @@ const AccordionItem = ({title, detail}) => {
         </svg>
       </summary>
   
-      <p class="mt-4 px-4 leading-relaxed text-[#757575] text-sm font-[400] font-sans ">
+      <p 
+       data-aos="fade up"
+       data-aos-duration="1000"
+      class="mt-4 px-4 leading-relaxed text-[#757575] text-sm font-[400] font-sans ">
      {detail}
       </p>
     </details>

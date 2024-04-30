@@ -2,7 +2,6 @@ import React from 'react'
 import Logo from '../Logo'
 import safe from '../../assets/icons/Vector.png'
 import {AiOutlineFacebook,AiOutlineTwitter,AiOutlineLinkedin,AiOutlineInstagram,AiOutlineWhatsApp} from 'react-icons/ai'
-  import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -14,15 +13,23 @@ const Footer = () => {
         <div className='flex items-start'>
 
         <div className='flex flex-col sm:max-w-md'>
-        <div className='flex items-center space-x-4'>
+        <div 
+         data-aos="fade up"
+         data-aos-duration="3000"
+        className='flex items-center space-x-4'>
           <img src={safe} className='h-[20px] sm:h-[48px] w-[20px] sm:w-[48px] object-cover' alt="" />
          <p className='font-[400] text-white text-sm sm:text-[24px] leading-[32.68px] font-sans'>SafeSpace</p>
         </div>
-          <p class="mt-4 font-sans font-[400] text-white text-sm sm:text-xl">
+          <p 
+           data-aos="fade up"
+           data-aos-duration="3000"
+          class="mt-4 font-sans font-[400] text-white text-sm sm:text-xl">
             Your anonymous support network for healing from sexual and gender-based violence.
           </p>
-          <div className='flex items-center justify-start space-x-8 pr-2'>
-          
+          <div 
+           data-aos="fade up"
+           data-aos-duration="3000"
+          className='flex items-center justify-start space-x-8 pr-2'>
             <a href='#' className='text-white font-[14px]'>
             <AiOutlineFacebook />
             </a>
@@ -41,9 +48,14 @@ const Footer = () => {
           </div>
         </div>
           <div class="col-span-2 sm:col-span-1 text-[#ffffff]">
-            <p class="font-bold text-sm sm:text-[16px] leading-[27.3px] ">Contact Us</p>
-  
-            <ul class="mt-6 space-y-4 text-sm ">
+            <p 
+             data-aos="fade up"
+             data-aos-duration="3000"
+            class="font-bold text-sm sm:text-[16px] leading-[27.3px] ">Contact Us</p>
+            <ul 
+             data-aos="fade up"
+             data-aos-duration="3000"
+            class="mt-6 space-y-4 text-sm ">
               <li>
                 <a href="#" class=" transition text-sm font-sans hover:opacity-75 "> info@safeher.org </a>
               </li>
@@ -66,8 +78,14 @@ const Footer = () => {
         <div className='flex items-start justify-around sm:space-x-20'>
 
           <div class="col-span-2  text-[#ffffff]">
-            <p class="font-bold text-sm sm:text-[16px] leading-[27.3px]">Quick Links</p>
-            <ul class="mt-6 space-y-4 text-sm">
+            <p 
+             data-aos="fade up"
+             data-aos-duration="3000"
+            class="font-bold text-sm sm:text-[16px] leading-[27.3px]">Quick Links</p>
+            <ul 
+             data-aos="fade up"
+             data-aos-duration="3000"
+            class="mt-6 space-y-4 text-sm">
               <li>
                 <a href="#" class=" transition text-sm font-sans hover:opacity-75 ">home</a>
               </li>
@@ -89,12 +107,19 @@ const Footer = () => {
             </ul>
           </div>
   
-          <div class="col-span-2 sm:col-span-1 text-[#ffffff]">
-            <p class="font-bold text-sm sm:text-[16px] leading-[27.3px] uppercase">Stay Informed</p>
+          <div 
+           data-aos="fade up"
+           data-aos-duration="3000"
+          class="col-span-2 sm:col-span-1 text-[#ffffff]">
+            <p 
+             data-aos="fade up"
+             data-aos-duration="3000"
+            class="font-bold text-sm sm:text-[16px] leading-[27.3px] uppercase">Stay Informed</p>
             <form class="w-full">
             <label for="UserEmail" className='text-sm font-sans font-[400]'> Email </label>
-
             <div
+             data-aos="fade up"
+             data-aos-duration="3000"
               class=" focus-within:ring sm:flex sm:items-center sm:gap-4"
             >
               <input
@@ -105,7 +130,10 @@ const Footer = () => {
               />
 
             </div>
-            <div className='w-full  mt-4  sm:w-[299px]'>
+            <div 
+             data-aos="fade up"
+             data-aos-duration="3000"
+            className='w-full  mt-4  sm:w-[299px]'>
               <button
                 class="mt-1 h-[39px] w-[192px] sm:w-[299px]   px-6 bg-[#ffffff] text-center text-[#415D43] gap-[10px] py-3 text-sm font-bold uppercase tracking-wide transition-none hover:bg-[#415D43] sm:border  hover:text-white sm:mt-0 sm:w-auto sm:shrink-0"
               >
@@ -113,12 +141,13 @@ const Footer = () => {
               </button>
             </div>
           </form>
-            
           </div>
       </div>
         </div>
-
-        <div class="sm:flex mt-5 sm:mt-10 sm:justify-between">
+        <div 
+         data-aos="fade up"
+         data-aos-duration="3000"
+        class="sm:flex mt-5 sm:mt-10 sm:justify-between">
           <p class="text-xs text-white">&copy; 2024. Safespace. All rights reserved.</p>
         </div>
     </div>
