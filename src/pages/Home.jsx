@@ -5,18 +5,18 @@ const Team = React.lazy(()=> import('../components/Team'))
 const Impact = React.lazy(()=> import('../components/Impact'))
 const Testimonials = React.lazy(()=> import('../components/Testimonials'))
 const Donate = React.lazy(()=> import('../components/Donate'))
-const Home = () => {
-  return (
-    <div className='mx-auto max-w-screen-xl'>
-      <Suspense fallback={<Loader />}>
-      <Hero />
-      <Team />
-      <Impact />
-      <Testimonials />
-      <Donate />
-      </Suspense>
-    </div>
-  )
-}
-
+const Home = React.memo(() =>{
+    return (
+      <div className='mx-auto max-w-screen-xl'>
+        <Suspense fallback={<Loader />}>
+        <Hero />
+        <Team />
+        <Impact />
+        <Testimonials />
+        <Donate />
+        </Suspense>
+      </div>
+    )
+  }
+) 
 export default Home
