@@ -1,4 +1,5 @@
 import React,{Suspense} from 'react'
+
 import { Loader } from 'lucide-react'
 const Hero = React.lazy(()=> import('../components/Hero'))
 const Team = React.lazy(()=> import('../components/Team'))

@@ -1,11 +1,9 @@
-import React,{Suspense} from 'react'
-import { Loader } from 'lucide-react'
+import React from 'react'
 import { teamsData } from '../utils/data'
 import {CheckCircle,Globe2Icon,Users} from 'lucide-react'
 const LazyLoadedImage = React.lazy(()=> import('../components/LazyLoadedImage'))
 const Logo = React.lazy(()=> import('../components/Logo'))
 const Button = React.lazy(()=> import('../components/Button'))
-
 const AboutPage =React.memo(() => {
      return (
        <section className='class="space-y-4 py-6 sm:py-20"'>

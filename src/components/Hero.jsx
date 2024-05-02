@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import hero from '../assets/images/pic.jpg'
 import LazyLoadedImage from './LazyLoadedImage'
 
 const Hero =React.memo(() => {
@@ -27,8 +28,8 @@ const Hero =React.memo(() => {
         <div class="h-64 rounded-lg sm:h-80 lg:h-[504px] lg:w-full">
           <LazyLoadedImage
             alt="safe space banner hero"
-            src="https://img.freepik.com/free-photo/close-up-stacked-hands_23-2147664378.jpg?w=740&t=st=1714467972~exp=1714468572~hmac=d2979c5987410a8d23205f00d8dd6ac342f52228e71ad9fc84a789dcbffaffe0"
-            className="inset-0 h-full w-full object-cover"
+            src={hero}
+            className="inset-0 h-64  sm:h-80 lg:h-[504px] lg:w-full object-cover"
           />
         </div>
       </div>

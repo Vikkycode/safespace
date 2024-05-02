@@ -4,10 +4,10 @@ import target from '../assets/images/Target.png'
 import chat from '../assets/images/Chat.png'
 
 import tunde from '../assets/images/tunde.png'
-import mariam  from '../assets/images/Mariam Profile 1.png'
-import lateefah  from '../assets/images/lateefah Image 1.png'
-import muteat  from '../assets/images/Muteeat Olaide 1.png'
-import salish  from '../assets/images/WhatsApp Image 2024-03-17 at 02.32 1.png'
+import mariam  from '../assets/images/Mariam.png'
+import lateefah  from '../assets/images/lateefah.png'
+import muteat  from '../assets/images/Muteeat.png'
+import salish  from '../assets/images/salish.jpg'
 const Navitems = [
     {
         name:'home',
