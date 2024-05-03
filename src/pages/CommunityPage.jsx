@@ -44,9 +44,6 @@ const CommunityForum =React.memo(() => {
               <Button title={"Contact us"} />
               </div> */}
           </div>
-          <CustomizationProvider>
-          <CustomizableComponent />
-          </CustomizationProvider>
       </section>
     )
   }

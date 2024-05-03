@@ -1,10 +1,23 @@
 import React from 'react'
 import { teamsData } from '../utils/data'
 import {CheckCircle,Globe2Icon,Users} from 'lucide-react'
+import {useSpring, animated} from 'react-spring'
 const LazyLoadedImage = React.lazy(()=> import('../components/LazyLoadedImage'))
 const Logo = React.lazy(()=> import('../components/Logo'))
 const Button = React.lazy(()=> import('../components/Button'))
-const AboutPage =React.memo(() => {
+
+const Number = ({n})=>{
+    const {number} = useSpring({
+        from:{ number:0},
+        number:n,
+        delay:4000,
+        config:{mass:1, tension:20, friction:10},
+    })
+
+    return <animated.div>{number.to((n)=> n.toFixed(0))}</animated.div>
+}
+
+const AboutPage =() => {
      return (
        <section className='class="space-y-4 py-6 sm:py-20"'>
             <div className='flex flex-col'>
@@ -75,9 +88,12 @@ const AboutPage =React.memo(() => {
                     data-aos-duration="1000"
                    className='flex items-center justify-center space-x-4 bg-[#D9d9d9] w-full '>
                        <CheckCircle className='text-[#415D48] h-[20px] w-[20px] sm:h-[65px] sm:w-[65px]' />
-                       <li>
-                           <h1 className='font-bold text-xl sm:text-4xl text-center'>5000+</h1>
-                           <p className='font-[400] text-sm sm:text-xl text-center'>users empowered</p>
+                       <li className='flex flex-col'>
+                        <div className='flex items-center'>
+                        <h1 className='font-bold text-xl sm:text-4xl text-center'><Number n={5000} /></h1>
+                           <p className='font-bold text-xl sm:text-4xl text-center'>+</p>
+                        </div>
+                           <p className='font-[400]  text-sm sm:text-xl text-center capitalize'>users empowered</p>
                        </li>
                    </ul>
                    <ul 
@@ -85,9 +101,12 @@ const AboutPage =React.memo(() => {
                     data-aos-duration="1000"
                    className='flex items-center justify-center space-x-4 bg-[#D9d9d9] w-full'>
                        <Globe2Icon className='text-[#415D48] h-[20px] w-[20px] sm:h-[65px] sm:w-[65px]' />
-                       <li>
-                           <h1 className='font-bold  text-xl sm:text-4xl text-center'>1000+</h1>
-                           <p className='font-[400]  text-sm sm:text-xl text-center'>registered users</p>
+                       <li className='flex flex-col'>
+                        <div className='flex items-center'>
+                        <h1 className='font-bold text-xl sm:text-4xl text-center'><Number n={1000} /></h1>
+                           <p className='font-bold text-xl sm:text-4xl text-center'>+</p>
+                        </div>
+                           <p className='font-[400]  text-sm sm:text-xl text-center capitalize'>registered users</p>
                        </li>
                    </ul>
                    <ul 
@@ -95,9 +114,12 @@ const AboutPage =React.memo(() => {
                     data-aos-duration="1000"
                    className='flex items-center justify-center space-x-4 bg-[#D9d9d9] w-full'>
                        <Users className='text-[#415D48] h-[20px] w-[20px] sm:h-[65px] sm:w-[65px]' />
-                       <li>
-                           <h1 className='font-bold text-xl sm:text-4xl text-center'>700+</h1>
-                           <p className='font-[400]  text-sm sm:text-xl text-center'>awards received</p>
+                       <li className='flex flex-col'>
+                        <div className='flex items-center'>
+                        <h1 className='font-bold text-xl sm:text-4xl text-center'><Number n={700} /></h1>
+                           <p className='font-bold text-xl sm:text-4xl text-center'>+</p>
+                        </div>
+                           <p className='font-[400]  text-sm sm:text-xl text-center capitalize'>awards received</p>
                        </li>
                    </ul>
                </div>
@@ -111,5 +133,5 @@ const AboutPage =React.memo(() => {
        </section>
      )
    }
-)
+
 export default AboutPage
