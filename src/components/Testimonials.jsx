@@ -6,7 +6,7 @@ const Testimony =React.memo(() => {
    <div class="mx-auto max-w-screen-xl px-4  sm:px-6 lg:px-8 py-2 lg:py-16">
    <h1 
    data-aos="fade up" 
-   data-aos-duration="3000"
+   data-aos-duration="1000"
    className='text-[16px] leading-[27.3px] py-4 font-bold text-center text-gray-900 md:text-3xl sm:pb-20'>Testimonials</h1>
      <div class="mt-8 justify-center text-center grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
      <blockquote 
@@ -17,7 +17,7 @@ const Testimony =React.memo(() => {
          </div>
          <p 
           data-aos="fade left"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
          class="mt-4 text-[#000] font-sans font-[400] text-[16px]">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
@@ -26,7 +26,7 @@ const Testimony =React.memo(() => {
          <div className='border-[1px] my-10 border-black'></div>
          <div 
           data-aos="fade left"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
          className='flex items-center space-x-5'>
          <LazyLoadedImage
              alt="avatar"
@@ -48,7 +48,7 @@ const Testimony =React.memo(() => {
          </div>
          <p 
           data-aos="fade up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
          class="mt-4 text-[#000] font-sans font-[400] text-[16px]">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
@@ -57,7 +57,7 @@ const Testimony =React.memo(() => {
          <div className='border-[1px] my-10 border-black'></div>
          <div 
           data-aos="fade up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
          className='flex items-center space-x-5'>
          <LazyLoadedImage
              alt="avatar"
@@ -79,7 +79,7 @@ const Testimony =React.memo(() => {
          </div>
          <p 
           data-aos="fade right"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
          class="mt-4 text-[#000] font-sans font-[400] text-[16px]">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
@@ -88,7 +88,7 @@ const Testimony =React.memo(() => {
          <div className='border-[1px] my-10 border-black'></div>
          <div 
           data-aos="fade right"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
          className='flex items-center space-x-5'>
          <LazyLoadedImage
              alt="avatar"

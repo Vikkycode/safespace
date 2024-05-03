@@ -7,7 +7,7 @@ const ContactUsPage =React.memo(() => {
            <div className='flex flex-col'>
           <div 
           data-aos="fade up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           className='flex justify-center items-center flex-col'>
               <div className='flex justify-center items-center py-10  space-x-4'>
                   <Logo className="h-[32px] w-[32px] sm:h-[92.63px] sm:w-[84.3px] text-[#415D43]" />
@@ -16,14 +16,14 @@ const ContactUsPage =React.memo(() => {
           </div>
           <div 
           data-aos="fade up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           className='py-6 px-4 sm:px-6 mx-4 sm:mx-20 sm:h-[412px] text-center sm:max-w-[1257px]'>
               <h1 className='font-[700] text-sm sm:text-2xl pb-10'>reach out to us, we are available to help</h1>
               <p className='font-sans font-[400] text-[10px] sm:text-xl text-[#757575]'>join hands to get rid of SGBV</p>
           </div>
           <div 
            data-aos="fade up"
-           data-aos-duration="3000"
+           data-aos-duration="1000"
           className='py-6 px-4 sm:px-6 mx-4 sm:mx-20 sm:-mt-40 flex justify-betweeen gap-4 items-center flex-col sm:flex-row'>
             <div 
             className='w-[350px] sm:w-[302px] h-[187px] text-center bg-[#f9f9f9] gap-[20px] flex flex-col justify-start pt-8 items-center hover:bg-[#415D43] hover:text-white duration-500 transition-all'>
@@ -47,7 +47,7 @@ const ContactUsPage =React.memo(() => {
               <p className='font-sans font-[400] sm:text-xl'>stay connected with us on our media platforms</p>
               <div 
                data-aos="fade up"
-               data-aos-duration="3000"
+               data-aos-duration="1000"
               className='flex items-center justify-between space-x-6'>
             <a 
             href='#' className='text-[#757575] font-[14px]'>

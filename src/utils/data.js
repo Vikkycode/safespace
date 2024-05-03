@@ -1,13 +1,12 @@
-import diversity from '../assets/images/Diversity.png'
-import selfcare from '../assets/images/Selfcare.png'
-import target from '../assets/images/Target.png'
-import chat from '../assets/images/Chat.png'
-
-import tunde from '../assets/images/tunde.png'
-import mariam  from '../assets/images/Mariam.png'
-import lateefah  from '../assets/images/lateefah.png'
-import muteat  from '../assets/images/Muteeat.png'
-import salish  from '../assets/images/salish.jpg'
+import diversity from '../assets/images/Diversity.webp'
+import selfcare from '../assets/images/Selfcare.webp'
+import target from '../assets/images/Target.webp'
+import chat from '../assets/images/Chat.webp'
+import tunde from '../assets/images/tunde.webp'
+import mariam  from '../assets/images/Mariam.webp'
+import lateefah  from '../assets/images/lateefah.webp'
+import muteat  from '../assets/images/Muteeat.webp'
+import salish  from '../assets/images/salish.webp'
 const Navitems = [
     {
         name:'home',

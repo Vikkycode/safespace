@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import hero from '../assets/images/pic.jpg'
+import hero from '../assets/images/pic.webp'
 import LazyLoadedImage from './LazyLoadedImage'
 
 const Hero =React.memo(() => {
@@ -12,17 +12,17 @@ const Hero =React.memo(() => {
        class="p-4  lg:py-24 lg:pl-20  bg-black/40 bg- sm:h-[504px] h-64  sm:w-[1120px] absolute space-y-8 ">
           <h2 
            data-aos="fade up"
-           data-aos-duration="3000"
+           data-aos-duration="1000"
           class="text-3xl font-bold sm:text-[70px] text-[#ffffff] sm:leading-[119.42px]">SafeSpace Heroes</h2>
           <p 
            data-aos="fade up"
-           data-aos-duration="3000"
+           data-aos-duration="1000"
           class="mt-4 text-white sm:mb-16 sm:font-[400] text-sm sm:text-[24px] sm:leading-[32.68px] sm:text-[#ffffff] sm:h-[66px] sm:w-[874px]">
           Your anonymous support network for healing from sexual and gender-based violence.
           </p>
           <Button 
            data-aos="fade up"
-           data-aos-duration="3000"
+           data-aos-duration="1000"
           href={'/forum'} title="join forum"/>
         </div>
         <div class="h-64 rounded-lg sm:h-80 lg:h-[504px] lg:w-full">

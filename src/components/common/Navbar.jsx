@@ -10,7 +10,9 @@ const Navbar =React.memo(() => {
         const {pathname} = location
       return (
         <div className='py-10 px-4 sm:px-6  lg:px-20'>
-            <nav className='flex justify-between items-center'>
+            <nav  
+            aria-label="Breadcrumb"
+            className='flex justify-between items-center'>
             <Link to={"/"} className='flex items-center space-x-4'>
             <Logo className={"h-[32px] w-[32px] sm:h-[39px] sm:w-[35.18px] object-contain"} />
             <p className='font-[400] text-sm leading-[16.34px] sm:text-[24px] sm:leading-[32.68px] font-sans'>SafeSpace</p>
@@ -38,7 +40,7 @@ const Navbar =React.memo(() => {
             data-aos-duration="1000"
             className='bg-white  w-full h-full fixed z-[10] top-0 right-0 flex justify-center items-center'>
             <SidebarCloseIcon size={32} className='fixed top-10 right-5' onClick={() => setIsClick(false)} />
-            <ul className='sm:flex  items-center space-x-8'>
+            <ul className='sm:flex  items-center'>
                 {Navitems?.map((item, index)=>(
                     <li key={index}>
                         <Link  to={item?.path}
