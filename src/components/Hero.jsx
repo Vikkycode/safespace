@@ -9,7 +9,7 @@ const Hero =React.memo(() => {
     <div class="mx-auto max-w-screen-xl sm:py-12  lg:py-16 px-4 sm:px-6  lg:px-20">
       <div class="grid grid-cols-1  gap-8 lg:grid-cols-1 lg:gap-10">
       <div 
-       class="p-4  lg:py-24 lg:pl-20  bg-black/40 bg- sm:h-[504px] h-64  sm:w-[1120px] absolute space-y-8 ">
+       class="p-4  lg:py-24 lg:pl-20  bg-black/40  sm:h-[504px] h-64 w-[345px] sm:w-[1120px] absolute space-y-8 ">
           <h2 
            data-aos="fade up"
            data-aos-duration="1000"

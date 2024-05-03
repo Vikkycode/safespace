@@ -15,15 +15,15 @@ function App() {
   return (
     <>
    <Router>
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<p>loading</p>}>
     <Navbar />
     <Animation>
     <Routes />
     </Animation>
    <Footer />
+   <BackToTop />
     </Suspense>
    </Router>
-   <BackToTop />
     </>
   );
 }

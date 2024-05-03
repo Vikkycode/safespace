@@ -8,6 +8,7 @@ const Impact = React.lazy(()=> import('../components/Impact'))
 const Testimonials = React.lazy(()=> import('../components/Testimonials'))
 const Donate = React.lazy(()=> import('../components/Donate'))
 
+
 const Home = React.memo(() =>{
   
     return (

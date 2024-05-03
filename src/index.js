@@ -8,9 +8,9 @@ import { CustomizationProvider } from './hooks/customizationContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CustomizationProvider>
+    {/* <CustomizationProvider> */}
     <App />
-    </CustomizationProvider>
+    {/* </CustomizationProvider> */}
   </React.StrictMode>
 );
 
