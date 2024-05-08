@@ -56,7 +56,7 @@ const Team =React.memo(() => {
               src={target} 
               className='h-[84px] w-[61px]' 
               alt="give we give" />
-            <h2 className="mt-2 font-[400] text-sm sm:text-xl font-sans">Give we give</h2>
+            <h2 className="mt-2 font-[400] text-sm sm:text-xl font-sans">we give ways</h2>
             </span>
   
             <span 
