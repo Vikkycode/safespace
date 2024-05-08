@@ -38,7 +38,7 @@ const featureItems = [
     },
     {
         image:target,
-        name:"ways we give"
+        name:"we give ways"
     },
     {
         image:chat,
@@ -56,11 +56,6 @@ const teamsData = [
         name:'Ahmad mariam bolanle',
         role:' Designer',
         image:mariam
-    },
-    {
-        name:'ettu temitope latifat',
-        role:'Designer',
-        image:lateefah
     },
     {
         name:'Odekunle Dorcas',

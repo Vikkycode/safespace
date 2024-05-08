@@ -3,11 +3,17 @@ import Logo from '../Logo'
 import { Navitems } from '../../utils/data'
 import {Menu,SidebarCloseIcon} from 'lucide-react'
 import Button from '../Button'
-import {Link, useLocation } from "react-router-dom";
+import {Link, useLocation, useNavigate } from "react-router-dom";
 const Navbar =React.memo(() => {
         const [isClick, setIsClick] = useState(false)
         const location = useLocation()
         const {pathname} = location
+        const navigate  = useNavigate()
+
+        const handleClick = (url) =>{
+            navigate.push(url)
+            setIsClick(true)
+        }
       return (
         <div className='py-10 px-4 sm:px-6  lg:px-20'>
             <nav  
@@ -43,8 +49,10 @@ const Navbar =React.memo(() => {
             <ul className='sm:flex  items-center'>
                 {Navitems?.map((item, index)=>(
                     <li key={index}>
-                        <Link  to={item?.path}
-                        className={`font-[400] capitalize text-[24px] leading-[40.94px] text-[#000000] ${ pathname === item?.path ? 'font-[700] text-[#000] duration-300 transition-all': ''}`}>
+                        <Link  
+                        to={item?.path}
+                        className={`font-[400] capitalize text-[24px] leading-[40.94px] text-[#000000] ${ pathname === item?.path ? 'font-[700] text-[#000] duration-300 transition-all': ''}`}
+                        onClick={() => handleClick(item.path)}>
                             {item.name}
                         </Link>
                     </li>

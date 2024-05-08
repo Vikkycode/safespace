@@ -9,7 +9,7 @@ const Donate =React.memo(() => {
         data-aos="fade up"
         data-aos-duration="1000"
        className='text-[16px] leading-[27.3px] py-4 font-bold text-center text-gray-900 md:text-3xl sm:pb-20'>Support our mission!</h1>
-       <div class="grid grid-cols-1 gap-y-8 sm:w-full bg-[#f6f6f6] lg:p-20 lg:grid-cols-2 lg:items-center lg:gap-x-16">
+       <div class="grid grid-cols-1 gap-y-8 sm:w-full bg-[#f6f6f6] py-10 lg:p-20 lg:grid-cols-2 lg:items-center lg:gap-x-16">
          <div class="text-center sm:text-start lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
            <div className='flex flex-col'>
            <div

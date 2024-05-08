@@ -18,7 +18,7 @@ const Testimony =React.memo(() => {
          <p 
           data-aos="fade left"
           data-aos-duration="1000"
-         class="mt-4 text-[#000] font-sans font-[400] text-[16px]">
+         class="mt-4 text-gray-500 font-sans font-[400] text-[16px]">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
            error officiis atque voluptates magnam!
@@ -49,7 +49,7 @@ const Testimony =React.memo(() => {
          <p 
           data-aos="fade up"
           data-aos-duration="1000"
-         class="mt-4 text-[#000] font-sans font-[400] text-[16px]">
+         class="mt-4 text-gray-500 font-sans font-[400] text-[16px]">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
            error officiis atque voluptates magnam!
@@ -80,7 +80,7 @@ const Testimony =React.memo(() => {
          <p 
           data-aos="fade right"
           data-aos-duration="1000"
-         class="mt-4 text-[#000] font-sans font-[400] text-[16px]">
+         class="mt-4 text-gray-500 font-sans font-[400] text-[16px]">
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
            consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius accusamus
            error officiis atque voluptates magnam!
