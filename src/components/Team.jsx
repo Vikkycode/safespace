@@ -42,7 +42,7 @@ const Team =React.memo(() => {
             className="inline-flex flex-col justify-center items-center bg-[#f6f6f6] h-[110px] w-[165px] sm:h-[223px] sm:w-[290px]  p-3">
               <LazyLoadedImage 
               src={diversity} 
-              className='h-[84px] w-[61px]' 
+              className='h-[84px] object-contain w-[61px]' 
               alt="diversity"
               />
             <h2 className="mt-2 font-[400] text-sm sm:text-xl font-sans">Diversity</h2>
@@ -54,8 +54,8 @@ const Team =React.memo(() => {
             className="inline-flex flex-col justify-center items-center rounded-lg bg-[#f6f6f6] h-[110px] w-[165px] sm:h-[223px] sm:w-[290px]  p-3">
               <LazyLoadedImage 
               src={target} 
-              className='h-[84px] w-[61px]' 
-              alt="give we give" />
+              className='h-[84px] object-contain w-[61px]' 
+              alt="we give way" />
             <h2 className="mt-2 font-[400] text-sm sm:text-xl font-sans">we give ways</h2>
             </span>
   
@@ -65,7 +65,7 @@ const Team =React.memo(() => {
             className="inline-flex  mt-4 md:mt-8 flex-col justify-center items-center rounded-lg bg-[#f6f6f6] h-[110px] w-[165px] sm:h-[223px] sm:w-[290px]  p-3">
               <LazyLoadedImage 
               src={selfcare} 
-              className='h-[84px] w-[61px]' 
+              className='h-[84px] w-[61px] object-contain' 
               alt="self care" 
               />
             <h2 className="mt-2 font-[400] text-sm sm:text-xl font-sans">Self care</h2>
@@ -77,7 +77,7 @@ const Team =React.memo(() => {
             className="inline-flex mt-4 md:mt-8 flex-col justify-center items-center rounded-lg bg-[#f6f6f6] h-[110px] w-[165px] sm:h-[223px] sm:w-[290px]  p-3">
               <LazyLoadedImage 
               src={chat} 
-              className='h-[84px] w-[61px]' 
+              className='h-[84px] object-contain w-[61px]' 
               alt="safe chat" />
             <h2 className="mt-2 font-[400] text-sm sm:text-xl font-sans">safe chat</h2>
             </span>

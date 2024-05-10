@@ -8,8 +8,7 @@ const Footer =React.memo(() => {
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="lg:flex lg:justify-around lg:items-start lg:gap-8">
   
-          <div className='flex items-start justify-between'>
-  
+          <div className='flex items-center justify-between sm:space-x-20 space-x-0'>
           <div className='flex flex-col sm:max-w-sm'>
           <div 
            data-aos="fade up"
@@ -124,9 +123,8 @@ const Footer =React.memo(() => {
                   type="email"
                   id="UserEmail"
                   placeholder="email address"
-                  className="w-[192px] h-[39px] sm:w-[299px] border-none focus:border-transparent focus:ring-transparent sm:text-sm"
+                  className="w-[192px] h-[39px] sm:w-[299px] border-none  focus:border-transparent focus:ring-transparent sm:text-sm placeholder:pl-2"
                 />
-  
               </div>
               <div 
                data-aos="fade up"
