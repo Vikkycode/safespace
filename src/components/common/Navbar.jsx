@@ -4,15 +4,16 @@ import { Navitems } from '../../utils/data'
 import {Menu,SidebarCloseIcon} from 'lucide-react'
 import Button from '../Button'
 import {Link, useLocation, useNavigate } from "react-router-dom";
+import { useToggleContext } from '../../hooks/contexts/toggleContext'
 const Navbar =React.memo(() => {
-        const [isClick, setIsClick] = useState(false)
+        const {isOpen, handleToggle} = useToggleContext()
         const location = useLocation()
         const {pathname} = location
         const navigate  = useNavigate()
 
         const handleClick = (url) =>{
             navigate.push(url)
-            setIsClick(true)
+            handleToggle()
         }
       return (
         <div className='py-10 px-4 sm:px-6  lg:px-20'>
@@ -38,14 +39,14 @@ const Navbar =React.memo(() => {
             </div>
             <Menu 
             size={32} 
-            onClick={() => setIsClick(true)}
+            onClick={handleToggle}
             className='sm:hidden block'/>
-                {isClick && (
+                {isOpen && (
             <div 
             data-aos="fade right" 
             data-aos-duration="1000"
             className='bg-white  w-full h-full fixed z-[10] top-0 right-0 flex justify-center items-center'>
-            <SidebarCloseIcon size={32} className='fixed top-10 right-5' onClick={() => setIsClick(false)} />
+            <SidebarCloseIcon size={32} className='fixed top-10 right-5' onClick={handleToggle} />
             <ul className='sm:flex  items-center'>
                 {Navitems?.map((item, index)=>(
                     <li key={index}>
