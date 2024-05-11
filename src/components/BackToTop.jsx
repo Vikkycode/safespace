@@ -1,12 +1,13 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import {CircleArrowUp} from 'lucide-react'
+import { useToggleContext } from '../hooks/contexts/toggleContext'
 const BacktoTop = () => {
-    const [invisible, setInvisible] = useState(false)
+    const {invisible, handleInvisible} = useToggleContext()
 
     useEffect(()=>{
         const handleBacktoTopButton = ()=>{
             const handleTop = document.documentElement.scrollTop || document.body.scrollTop
-            setInvisible(handleTop > 190);
+            handleInvisible(handleTop > 190);
         }
         window.addEventListener('scroll',handleBacktoTopButton)
 
